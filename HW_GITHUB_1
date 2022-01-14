@@ -1,0 +1,312 @@
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+Создан репозиторий в GitHub
+Созданный репозиторий склонирован на локальный компьютер в отдельную папку.
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+
+ 4. Создать внешний репозиторий c названием JSON
+    done
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+    git clone https://github.com/Montana404/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+    touch new.json
+
+ 7. Добавить файл под гит.
+    git add new.json
+    git add .
+
+ 8. Закоммитить файл.
+    git commit -m "Коммит_1"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+    git push
+ 
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе
+    (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+    vim new.json
+    i -> информация о себе -> Esc -> :wq -> Entr
+
+{
+"Name" : "Sergey",
+"Age" : "37",
+"Pets": "0",
+"Sallary" : "4500"
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+     git add new.json
+     git commit -m "Коммит_2"
+
+ 12. Создать файл preferences.json
+     touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях
+     (Любимый фильм, любимый сериал, любимая еда) в формате JSON.
+     vim preferences.json
+     i -> информация о предпочтениях -> Esc -> :wq -> Entr
+
+{
+"Film" : "The Onion Movie",
+"Serial" : "True detective",
+"Food" : "Sabji"
+}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+     touch sklls.json
+     vim preferences.json
+     i -> информация о скиллах -> Esc -> :wq -> Entr
+
+{
+"Skill_1" : "GITBash",
+"Skill_2" : "GITHUB",
+"Skill_3" : "REST",
+"Skill_4" : "RESTful",
+"Skill_5" : "SOAP"
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+     git add {preferences.json,sklls.json} | git commit {preferences.json,sklls.json} -m "Коммит_3"
+     git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+     done
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+     done
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+{
+"Summary":"Login: Error messages in the login form are displayed in English",
+"Environment":"All browseres / devices",
+"Severity":"Major",
+"Step to reproduce":[ 
+ "1. Open front end https://www.test-obelink.be:8443/",
+ "2. Follow inloggen link",
+ "3. Fill required fields with invalid data",
+ "4. Click inloggen button",
+ "5. Pay attention to error messages"
+],
+"Actual results":"Error messages in the login form are displayed in English",
+"Expected result":"Error messages in the login form are displayed in the chosen language",
+"Attachment":"http://prntser.com/k905cq"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+     done
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+     git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+     done
+ 22. Клонировать репозиторий XML на локальный компьютер.
+     git clone https://github.com/Montana404/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+     touch new.xml
+
+ 24. Добавить файл под гит.
+     git add new.xml
+     git add .
+
+ 25. Закоммитить файл.
+     git commit - m "Коммит_1"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+     git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе
+     (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+     vim new.xml
+     i -> информация о себе -> Esc -> :wq -> Entr
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Name>Sergey</Name>
+    <Age>37</Age>
+    <Pets>0</Pets>
+    <Sallary>4500</Sallary>
+</root>
+
+ 28. Отправить изменения на внешний репозиторий.
+     git add new.xml
+     git commit -m "Коммит_2"
+     git push
+
+ 29. Создать файл preferences.xml
+     touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях 
+     (Любимый фильм, любимый сериал, любимая еда) в формате XML.
+     vim preferences.xml
+     i -> информация о предпочтениях -> Esc -> :wq -> Entr 
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Film>The Onion Movie</Film>
+    <Serial>True detective</Serial>
+    <Food>Sabji</Food>
+</root>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+     touch sklls.xml
+     vim sklls.xml
+     i -> информация о скиллах -> Esc -> :wq -> Entr
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Skill_1>GITBash</Skill_1>
+    <Skill_2>GITHUB</Skill_2>
+    <Skill_3>REST</Skill_3>
+    <Skill_4>RESTful</Skill_4>
+    <Skill_5>SOAP</Skill_5>
+</root>
+
+ 32. Сделать коммит в одну строку.
+     git add {preferences.xml,sklls.xml} | git commit {preferences.xml,sklls.xml} -m "Коммит_3"
+     
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+     git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+     done
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+     done
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+     done
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Summary>Login: Error messages in the login form are displayed in English</Summary>
+    <Environment>All browseres / devices</Environment>
+    <Severity>Major</Severity>
+    <Step to reproduce>1. Open front end https://www.test-obelink.be:8443/</Step to reproduce>
+    <Step to reproduce>2. Follow inloggen link</Step to reproduce>
+    <Step to reproduce>3. Fill required fields with invalid data</Step to reproduce>
+    <Step to reproduce>4. Click inloggen button</Step to reproduce>
+    <Step to reproduce>5. Pay attention to error messages</Step to reproduce>
+    <Actual results>Error messages in the login form are displayed in English</Actual results>
+    <Expected result>Error messages in the login form are displayed in the chosen language</Expected result>
+    <Attachment>http://prntser.com/k905cq</Attachment>
+</root>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+     done
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+     git pull
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT
+
+ 2. Клонировать репозиторий TXT на локальный компьютер
+    git clone https://github.com/Montana404/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”
+    cd TXT
+    touch new.txt
+
+ 4. Добавить файл под гит
+    git add new.txt
+
+ 5. Закоммитить файл
+    git commit -m "Коммит_1"
+
+ 6. Отправить файл на внешний GitHub репозиторий
+    git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе 
+    (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+    vim new.txt 
+    i -> информация о себе -> Esc -> :wq -> Entr
+
+Name : Sergey
+Age : 37
+Pets: 0
+Sallary : 4500
+
+ 8. Отправить изменения на внешний репозиторий
+    git add new.txt
+    git commit -m "Коммит_2"
+    git push
+
+ 9. Создать файл preferences.txt
+    touch preferences.txt
+
+ 10. В файл preferences.txt добавить информацию о своих предпочтениях 
+     (Любимый фильм, любимый сериал, любимая еда) в формате TXT
+     vim preferences.txt 
+     i -> информация о своих предпочтениях -> Esc -> :wq -> Entr
+
+Film : The Onion Movie
+Serial : True detective
+Food : Sabji
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+     touch sklls.txt
+     vim sklls.txt
+     i -> информация о скиллах -> Esc -> :wq -> Entr
+
+Skill_1 : GITBash
+Skill_2 : GITHUB
+Skill_3 : REST
+Skill_4 : RESTful
+Skill_5 : SOAP
+
+ 12. Сделать коммит в одну строку  [git commit -am   --- если не работает, то попробовать через &&]
+     git add {preferences.txt,sklls.txt} | git commit {preferences.txt,sklls.txt} -m "Коммит_3"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий
+     git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt
+     done
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+     done
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT
+
+Summary: 
+Login: Error messages in the login form are displayed in English
+
+Environment:
+All browseres / devices
+
+Severity:
+Major
+
+Step to reproduce: 
+1. Open front end https://www.test-obelink.be:8443/"
+2. Follow inloggen link
+3. Fill required fields with invalid data
+4. Click inloggen button
+5. Pay attention to error messages
+
+Actual results: Error messages in the login form are displayed in English
+Expected result: Error messages in the login form are displayed in the chosen language
+Attachment: http://prntser.com/k905cq
+
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+     done
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+     git pull
