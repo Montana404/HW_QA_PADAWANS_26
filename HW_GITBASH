@@ -1,0 +1,113 @@
+1) Посмотреть, где я:
+   pwd
+
+2) Создать папку:
+   mkdir Dir0
+
+3) Зайти в папку:
+   cd Dir0
+
+4) Создать 3 папки:
+    mkdir Dir1 Dir2 Dir3
+или mkdir {Dir1,Dir2,Dir3}
+
+5) Зайти в любую папку:
+   cd Dir1
+
+6) Создать 5 файлов (3 txt, 2 json):
+    touch text1.txt text2.txt text3.txt jon1.json jon2.json
+или touch {text1.txt,text2.txt,text3.txt,jon1.json,jon2.json}
+
+7) Создать 3 папки:
+   mkdir {Dir1_1,Dir1_2,Dir1_3}
+
+8) Вывести список содержимого папки
+   ls
+
+9) Открыть любой txt файл:
+   vim text1.txt
+
+10) Написать туда что-нибудь, любой текст:
+    I -> Привет, ментор! 
+
+11) Сохранить и
+    esc -> :wq -> Enter.
+
+12) Выйти из папки на уровень выше:
+    cd ..
+
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку:
+     mv ./Dir1/{text2.txt,text3.txt} .
+или  mv ./Dir1/text2.txt . & mv ./Dir1/text3.txt .
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку:
+    cp {text2.txt,text3.txt} ./Dir1/Dir1_1
+
+15) Найти файл по имени:
+    find . text2.txt
+или find ./ -name "*.txt"
+
+16) Найти содержимое в файле (команда grep) изучите как она работает
+    16.1 Найти в содержимом файле нужное слово: 
+    grep слово ./Dir2/text2.txt
+    16.2 Найти в папке и во всем ее содержимом нужный файл или все файлы, в название которых входит слово: 
+    ls -R | grep слово 
+
+16) Просмотреть содержимое в реальном времени:
+    tail -f text2.txt
+
+17) Вывести несколько первых строк из текстового файла:
+    head text2.txt
+или head -n 1 text2.txt [здесь число 4 указывает сколько первых строк нужно выводить. По умолчанию стоит 10]
+
+18) Вывести несколько последних строк из текстового файла:
+    tail text2.txt
+или tail -n 1 text2.txt [здесь число 4 указывает сколько последних строк нужно выводить. По умолчанию стоит 10]
+
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает
+    less ./Dir2/text2.txt
+
+20) Вывести дату и время
+    date
+
+Задание * 
+1) Отправить http запрос на сервер http://162.55.220.72:5005/terminal-hw-request
+   curl "http://162.55.220.72:5005/terminal-hw-request"
+
+Ответ:
+
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0   2828      0 --:--:-- --:--:-- --:--:--  2855{"Intro":"Hello!! This is your the first response from server",
+"Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+"result":["Your_String","Your_number"]}}
+
+Вводим данные и отправляем следующий запрос:
+
+   curl "http://162.55.220.72:5005/get_method?name=Montana&age=37"
+
+Ответ:
+
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    17  100    17    0     0    208      0 --:--:-- --:--:-- --:--:--   212["Montana","37"]
+
+
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+
+   touch myscript
+   vim myscript
+
+#!/bin/bash
+cd F0
+mkdir D1 D2 D3
+cd D1
+touch 1.txt 2.txt 3.txt 1.json 2.json
+mkdir F1 F2 F3
+ls -R
+mv {1.json,2.json} ..
+
+  I -> :wq -> Ent
+  chmod +x ./myscript
+  ./myscript
